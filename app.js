@@ -1,6 +1,5 @@
 let id = "id";
 let name = "customer";
-let prom = +prompt("введите ID");
 
 const obj1 = {
   [id]: 123,
@@ -20,13 +19,3 @@ const obj3 = {
   items: [{ name: "Xiaomi 14", price: 60000, quantity: 3 }],
   status: "pending",
 };
-
-if (prom == obj1.id) {
-  console.log(Object.values(obj1.items));
-} else if (prom == obj2.id) {
-  console.log(Object.values(obj2.items));
-} else if (prom == obj3.id) {
-  console.log(Object.values(obj3.items));
-} else {
-  console.log("Идентификатор не найден");
-}
